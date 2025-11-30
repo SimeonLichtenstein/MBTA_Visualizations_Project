@@ -1,0 +1,41 @@
+nav a.active {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+img.centered {
+    display: block;
+    margin: 0 auto;
+}
+
+.map-image {
+    max-width: 100%;
+    width: 600px;
+}
+
+.paragraph {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+iframe.centered {
+    display: block;
+    margin: 0 auto;
+}
+
+.centered button {
+    margin: 0 2rem;
+}

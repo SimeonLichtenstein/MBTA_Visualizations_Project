@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTA Ridership Analysis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        nav a.active {
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li><strong>MBTA Analysis</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="visualizations.html">Visualizations</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1 class = "centered">MBTA Ridership Analysis</h1>
+        <h3 class = "centered"> Created by Simeon Lichtenstein, Fatima Sayed Eltayed and Meher Kaur</h3>
+        <img src="https://www.mbta.com/subway-map-image" alt="MBTA Subway Map" class="map-image centered">
+        <br>
+        <p class="paragraph">The MBTA is a central part of living in Boston. 
+            As the main way to travel for many people in Boston, 
+            analyzing the MBTA shows how people flow through the city 
+            and what is important to them. Is there a larger number of riders 
+            when the Red Sox are playing? Do people stay in during the colder or rainier months, 
+            so ridership will be less, or are fewer people walking and biking, so ridership will be more? 
+            What line is the most popular, and does that change throughout the year? 
+            Which stops are the most popular, showing the hubs of Boston?
+            Looking into how people travel can help us answer these deeper questions 
+            about city life to give a better understanding of what life is like in Boston. </p>
+        <br>
+        <div class="centered">
+            <button id = 'dataButton'>Data</button>
+        <script>
+            const dataButton = document.getElementById('dataButton')
+            dataButton.addEventListener('click', function(){
+                window.location.href = 'data.html'
+            })
+        </script>
+        <button id = 'visualizationButton'>Visualizations</button>
+        <script>
+            const visualizationButton = document.getElementById('visualizationButton')
+            visualizationButton.addEventListener('click', function(){
+                window.location.href = 'visualizations.html'
+            })
+        </script>
+        <button id = 'conclusionsButton'>Conclusions</button>
+        <script>
+            const conclusionsButton = document.getElementById('conclusionsButton')
+            conclusionsButton.addEventListener('click', function(){
+                window.location.href = 'conclusion.html'
+            })
+        </script>
+        </div>
+        
+    </main>
+
+    <footer class="container">
+        <p>
+            <!-- footer -->
+        </p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
