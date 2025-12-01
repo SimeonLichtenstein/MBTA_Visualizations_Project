@@ -22,13 +22,80 @@
     </nav>
 
     <main class="container">
-        <h1>Data</h1>
-        <!-- data content here -->
+        <h3 class="centered">MBTA Datasets</h3>
+        <p class="paragraph">Our first MBTA dataset is titled MBTA_Monthly_Ridership_By_Mode_and_Line.
+            This dataset tracks MBTA ridership across all transit modes and lines on a monthly basis.
+             Each record includes the month of service, the type of day (weekday or weekend), the route or line name, 
+             and both total and average ridership figures for that period. 
+             The data spans multiple years and covers all major MBTA services including subway lines 
+             (Red, Orange, Blue, Green, Silver), bus routes, commuter rail, and ferry services. 
+             This granular breakdown allows for detailed analysis of ridership patterns across 
+             different transit modes, seasonal trends, and the impact of major events like the COVID-19 pandemic.
+            We got this data from MBTA Data portal and can be found here: 
+            <a href="https://mbta-massdot.opendata.arcgis.com/datasets/mbta-monthly-ridership-by-mode-and-line/about">MBTA Monthly Ridership Dataset</a></p>
+        <br>
+        <p class="paragraph">Our second MBTA dataset is titled Rail_Ridership_by_Season_Time_Period_RouteLine_and_Stop. 
+            This dataset provides a more detailed view of rail ridership by breaking down passenger activity at individual stations. 
+            Each record includes the season, route name, direction of travel, day type (weekday or weekend), 
+            time period (such as morning peak, midday, or evening), and the specific stop where passengers board or exit. 
+            The dataset tracks total and average boardings (ons), exits (offs), and overall flow for each station, 
+            allowing for precise analysis of how ridership patterns vary throughout the day and across different times of the year. 
+            This level of detail is especially useful for identifying the busiest stations, understanding commuter behavior during peak hours, 
+            and analyzing how seasonal changes affect specific stops on the MBTA rail network. 
+            We got this data from MBTA Data portal and can be found here: 
+            <a href="https://mbta-massdot.opendata.arcgis.com/datasets/mbta-rail-ridership-by-time-period-season-route-line-and-stop/about" target="_blank">MBTA Rail Ridership by Stop Dataset</a></p>
+        <br>
+        <p class="paragraph">Our third MBTA dataset is titled Gated_Station_Entries and includes data from 2019, 2020, and 2021. 
+This dataset focuses specifically on subway stations with fare gates, tracking the number of entries at each station throughout the day. 
+Each record includes the service date, time period (recorded in 30-minute intervals), station name, route or line, 
+and the number of gated entries during that time window. 
+With over three million rows of data across the three years, this dataset provides an incredibly detailed view of 
+how ridership flows through individual stations at different times of day. 
+This granular, time-stamped data is essential for identifying the busiest stations, 
+analyzing peak travel times, and understanding how ridership patterns changed dramatically during the COVID-19 pandemic. 
+The ability to track entries by specific time periods makes this dataset particularly valuable for studying commuter behavior 
+and the impact of major events on station-level traffic. 
+We got this data from MBTA Data portal and can be found here: 
+<a href="https://mbta-massdot.opendata.arcgis.com/datasets/mbta-gated-station-entries/about" target="_blank">MBTA Gated Station Entries Dataset</a></p>
+<br>
+<h3 class="centered">Weather Data</h3>
+<p class="paragraph">Our fourth dataset is titled NOAABostonWeather and provides comprehensive monthly weather data for the Boston area. 
+    This dataset comes from the National Oceanic and Atmospheric Administration (NOAA) and includes 88 months of weather observations 
+    with 29 different weather metrics. 
+    Key variables include average temperature (TAVG), total precipitation (PRCP), snowfall (SNOW), 
+    maximum and minimum temperatures (TMAX, TMIN), and various temperature threshold indicators 
+    such as days below freezing (DT32) or above 90°F (DX90). 
+    The dataset also tracks wind speed, heating and cooling degree days, and other atmospheric conditions. 
+    This weather data is essential for analyzing how environmental factors influence MBTA ridership patterns—
+    for example, whether extreme cold, heavy precipitation, or snowfall correlates with changes in transit usage. 
+    By combining weather data with ridership data, we can better understand how Bostonians adapt their travel behavior 
+    in response to different weather conditions throughout the year. 
+    We got this data from NOAA's Climate Data Online portal and can be found here: 
+    <a href="https://www.ncdc.noaa.gov/cdo-web/" target="_blank">NOAA Climate Data Online</a></p>
+<br>
+<h3 class="centered">Red Sox Data</h3>
+<p class="paragraph">Our fifth dataset is titled Red Sox Data and contains game schedule information for the 2019 Boston Red Sox season. 
+    This dataset includes 163 games with details such as the game date, opponent, game time, 
+    whether the game was played during the day or night (D/N), and attendance figures. 
+    Most importantly for our analysis, the dataset indicates whether each game was played at home or away, 
+    allowing us to identify when Fenway Park hosted games and attracted large crowds to the Kenmore area. 
+    This data is crucial for analyzing the impact of major sporting events on local MBTA ridership, 
+    particularly at Kenmore Station, which is the closest subway stop to Fenway Park. 
+    By comparing game dates with ridership data, we can observe clear spikes in station entries on days with home games, 
+    demonstrating how special events drive transit usage patterns in Boston. 
+    We got this data from Baseball Reference and can be found here: 
+    <a href="https://www.baseball-reference.com/teams/BOS/2019-schedule-scores.shtml" target="_blank">2019 Red Sox Schedule</a></p>
+    <br>
+    <div class="centered">
+        <a href="index.html" role="button">Home</a>
+        <a href="visualizations.html" role="button">Visualizations</a>
+        <a href="conclusion.html" role="button">Conclusions</a>
+    </div>
     </main>
 
     <footer class="container">
-        <p>
-            <!-- footer -->
+        <p class="small-text">
+            Created by Simeon Lichtenstein, Fatima Sayed Eltayed and Meher Kaur, December 2025
         </p>
     </footer>
 

@@ -31,11 +31,17 @@ img.centered {
     text-align: left;
 }
 
+.small-text {
+    font-size: 0.875rem; /* slightly smaller than normal */
+}
+
 iframe.centered {
     display: block;
     margin: 0 auto;
 }
 
-.centered button {
+
+.centered a[role="button"] {
     margin: 0 2rem;
 }
+

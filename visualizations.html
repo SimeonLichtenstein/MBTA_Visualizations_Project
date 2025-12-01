@@ -21,9 +21,9 @@
     </nav>
 
     <main class="container">
-        <h1>Visualizations</h1>
+        <h1 class="centered">Visualizations</h1>
         <section>
-            <h2>The Red Sox's Impact on Riderships</h2> 
+            <h2 class="centered">The Red Sox's Impact on Riderships</h2> 
             <img src="visualizations/kenmore_redsox.png" alt="Kenmore station entries vs Red Sox home games" width="80%" class="centered">
             <br>
             <p class="paragraph">This visualization looks at how the number of Red Sox home games relates to ridership at Kenmore Station. 
@@ -34,7 +34,7 @@
         </section>
 
         <section>
-            <h2>Weather Impact on Ridership</h2>
+            <h2 class="centered">Weather Impact on Ridership</h2>
             <iframe src="visualizations/weather_scatter.html" width="100%" height="620px" frameborder="0" class="centered"></iframe>
             <p class="paragraph">This interactive visualization lets users explore how MBTA ridership changes under different weather conditions. 
                 Users can switch between temperature or precipitation on the x-axis and view all transit modes together or isolate individual lines. 
@@ -44,8 +44,8 @@
         </section>
 
         <section>
-            <h2>The Busiest MBTA Stations</h2>
-            <iframe src="visualizations/busiest_stations.html" width="100%" height="600px" frameborder="0" class="centered"></iframe>
+            <h2 class="centered">The Busiest MBTA Stations</h2>
+            <iframe src="visualizations/busiest_stations.html" width="100%" height="900px" frameborder="0" class="centered"></iframe>
             <br>
             <br>
             <p class="paragraph">This visualization shows the busiest MBTA stations in 2019, 2020 and 2021 based on average daily gated entries. 
@@ -57,7 +57,7 @@
         </section>
 
         <section>
-            <h2>Ridership Across Pandemic Phases</h2>
+            <h2 class="centered">Ridership Across Pandemic Phases</h2>
             <img src="visualizations/across_pandemic_ridership.png" alt="Systemwide Monthly MBTA Ridership Across Pandemic Phases" width="80%" class="centered">
             <br>
             <p class="paragraph"> This chart shows how MBTA ridership changed before, during, and after the pandemic. 
@@ -69,7 +69,7 @@
         </section>
 
         <section>
-            <h2>Popularity of Each MBTA Line</h2>
+            <h2 class="centered">Popularity of Each MBTA Line</h2>
             <iframe src="visualizations/line_popularity_2019.html" width="100%" height="400px" frameborder="0" class="centered"></iframe>
             <p class="paragraph">This visualization shows the total ridership across each MBTA subway line in 2019, 
                 aggregating all station entries for each line. The Red Line leads in total ridership, followed closely by the Orange Line, 
@@ -79,11 +79,37 @@
                 more established subway lines. This breakdown helps illustrate how ridership demand is distributed across Boston's transit system 
                 and which lines carry the heaviest loads.</p>
         </section>
+
+        <section>
+            <h2 class="centered">Ridership Through the Day</h2>
+            <iframe src="visualizations/mbta_heatmap_complete.html" width="100%" height="1430px" class="centered"></iframe>
+            <br>
+            <p class="paragraph">This interactive D3 heatmap reveals when different MBTA stations are busiest throughout the day during Fall 2019. 
+                Each cell represents the average ridership (boardings plus alightings) for a specific station during a specific time period, 
+                with darker red colors indicating higher traffic. The visualization clearly shows strong commute patterns, 
+                with AM Peak and PM Peak times displaying the darkest colors across most stations. 
+                Downtown hubs like Downtown Crossing, Park Street, and South Station show intense activity during both morning and evening rush hours, 
+                while college-area stations such as Harvard and Kendall/MIT maintain strong midday ridership that reflects class schedules and campus activity. 
+                The interactive filters let users isolate individual MBTA lines to see how ridership patterns differ across the system. 
+                For example, the Orange Line shows heavy Forest Hills and Back Bay usage during commutes, 
+                while the Green Line displays more distributed activity throughout the day at stations like Copley and Kenmore. 
+                Clicking on station names or time period labels highlights specific rows or columns, making it easier to compare patterns. 
+                Weekend data aggregates all time periods into "Off Peak" because the MBTA reports weekend ridership as a single category 
+                rather than breaking it into specific time slots. 
+                This heatmap complements the other visualizations by adding a temporal dimension that shows not just where people ride, 
+                but when they ride, revealing the daily rhythms of Boston's transit system.</p>
+        </section>
+    <br>
+    <div class="centered">
+        <a href="index.html" role="button">Home</a>
+        <a href="data.html" role="button">Data</a>
+        <a href="conclusion.html" role="button">Conclusions</a>
+    </div>
     </main>
 
     <footer class="container">
-        <p>
-            <!-- footer -->
+        <p class="small-text">
+            Created by Simeon Lichtenstein, Fatima Sayed Eltayed and Meher Kaur, December 2025
         </p>
     </footer>
 
